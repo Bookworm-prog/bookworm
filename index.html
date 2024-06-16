@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <main>
+        <section id="patron-section">
+            <h2>Add Patron Information</h2>
+            <form id="patronForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="patronID">Patron ID:</label>
+                <input type="text" id="patronID" name="patronID" required>
+                <button type="submit">Add Patron</button>
+            </form>
+        </section>
+
+        <section id="book-section">
+            <h2>Add Book Information</h2>
+            <form id="bookForm">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+                <label for="bookISBN">Book ISBN-10:</label>
+                <input type="text" id="bookISBN" name="bookISBN" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section id="checkout-section">
+            <h2>Check In/Check Out Books</h2>
+            <form id="checkoutForm">
+                <label for="bookISBNCheck">Book ISBN-10:</label>
+                <input type="text" id="bookISBNCheck" name="bookISBNCheck" required>
+                <button type="submit" id="checkOutBtn">Check Out</button>
+                <button type="submit" id="checkInBtn">Check In</button>
+            </form>
+        </section>
+
+        <section id="availability-section">
+            <h2>Search Book Availability</h2>
+            <form id="searchForm">
+                <label for="searchISBN">Search by ISBN-10:</label>
+                <input type="text" id="searchISBN" name="searchISBN" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="availabilityResult"></div>
+        </section>
+
+        <section id="barcode-section">
+            <h2>Scan Book Barcode</h2>
+            <button id="scanBarcodeBtn">Scan Barcode</button>
+            <p id="scannedBarcode"></p>
+        </section>
+
+        <section id="output-section">
+            <h2>Library Status</h2>
+            <div id="libraryStatus"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Library</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
