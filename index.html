@@ -2,74 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Library Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrax Gang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Library Management System</h1>
+        <h1>Ayokillteck!</h1>
+        <nav>
+            <ul>
+                <!-- Navigation links here -->
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="patron-section">
-            <h2>Add Patron Information</h2>
-            <form id="patronForm">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <label for="patronID">Patron ID:</label>
-                <input type="text" id="patronID" name="patronID" required>
-                <button type="submit">Add Patron</button>
-            </form>
-        </section>
-
-        <section id="book-section">
-            <h2>Add Book Information</h2>
-            <form id="bookForm">
-                <label for="bookTitle">Book Title:</label>
-                <input type="text" id="bookTitle" name="bookTitle" required>
-                <label for="bookISBN">Book ISBN-10:</label>
-                <input type="text" id="bookISBN" name="bookISBN" required>
-                <button type="submit">Add Book</button>
-            </form>
-        </section>
-
-        <section id="checkout-section">
-            <h2>Check In/Check Out Books</h2>
-            <form id="checkoutForm">
-                <label for="bookISBNCheck">Book ISBN-10:</label>
-                <input type="text" id="bookISBNCheck" name="bookISBNCheck" required>
-                <button type="submit" id="checkOutBtn">Check Out</button>
-                <button type="submit" id="checkInBtn">Check In</button>
-            </form>
-        </section>
-
-        <section id="availability-section">
-            <h2>Search Book Availability</h2>
-            <form id="searchForm">
-                <label for="searchISBN">Search by ISBN-10:</label>
-                <input type="text" id="searchISBN" name="searchISBN" required>
-                <button type="submit">Search</button>
-            </form>
-            <div id="availabilityResult"></div>
-        </section>
-
-        <section id="barcode-section">
-            <h2>Scan Book Barcode</h2>
-            <button id="scanBarcodeBtn">Scan Barcode</button>
-            <p id="scannedBarcode"></p>
-        </section>
-
-        <section id="output-section">
-            <h2>Library Status</h2>
-            <div id="libraryStatus"></div>
-        </section>
-    </main>
-
+    <section id="hero">
+        <div class="image-container">
+            <img src="input-onlinepngtools.webp" alt="Hero Image">
+        </div>
+        <h2>4600 Thrax Gang</h2>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey! whats up i'm Ayokillteck! a 22 year old Producer from Columbus Ohio. I've been making music for over 8 years and I've made a wide range of genres and styles. I really started taking things serious in 2020 during the pandemic and ever since then i've been pushing more and more boundaries with my music! :3</p>
+    </section>
+    <section id="gallery">
+      
+        <div class="gallery">
+            <!-- Gallery images here -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+            <!-- Social media links here -->
+        </div>
+    </section>
+    <section id="soundcloud-profile">
+        <h2>Check Out My SoundCloud</h2>
+        <p>Visit my <a href="https://soundcloud.com/kvmi7einxn" target="_blank">SoundCloud profile</a> to listen to my latest tracks and follow me for updates.</p>
+    </section>
     <footer>
-        <p>&copy; 2024 Your Library</p>
+        <p>&copy; 2024 Ayokillteck!. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
